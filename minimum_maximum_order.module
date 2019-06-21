@@ -36,7 +36,7 @@ function minimum_maximum_order_form_alter(array &$form, FormStateInterface $form
     if ($total_price < $minimum) {
       // make checkout button as disabled
       $form['actions']['checkout']['#attributes']['disabled'] = true;
-      $form['#prefix'] = '<div class="alert alert-danger" role="alert">We only process orders with a minimum value of ₹ 5000</div>';
+      $form['#prefix'] = '<div class="alert alert-danger" role="alert">We only process orders with a minimum value of ₹ 1000</div>';
 
     }
   }
